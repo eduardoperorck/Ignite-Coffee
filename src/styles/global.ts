@@ -12,9 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: ${(props) => props.theme['background']};
+        background-image: url('../assets/background.png');
+        background-color: ${(props) => props.theme['background']};
         color: ${(props) => props.theme['black-600']};
         -webkit-font-smoothing: antialiased;
+        margin: 2rem 10rem;
     }
     
     body, input, textarea, button {

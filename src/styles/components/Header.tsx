@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 10rem;
+    margin: 2rem 0;
 
     h1 {
         color: ${(props) => props.theme['purple-400']};
