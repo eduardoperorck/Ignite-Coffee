@@ -2,6 +2,7 @@ import { Header } from "../components/Header";
 import { HomeContainer } from "../styles/pages/Home";
 import CoffeeBanner from '../assets/coffee-banner.png'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
+import { CoffeeList } from "../components/CoffeeList";
 
 export function Home() {
     return (
@@ -26,6 +27,8 @@ export function Home() {
 
                 <img src={CoffeeBanner} alt="" />
             </HomeContainer>
+
+            <CoffeeList/>
         </>
 
     )

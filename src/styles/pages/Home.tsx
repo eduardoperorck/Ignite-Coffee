@@ -20,39 +20,42 @@ export const HomeContainer = styled.div`
         margin: 1rem 0 2rem;
     }
 
-    div > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    div  {
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            p {
+                font-size: 0.95rem;
+                color: ${(props) => props.theme['black-400']};
+                
+                > span {
+                    border-radius: 999px;
+                    padding: 8px 8px 2px;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            p:nth-child(1) > span {
+                background: ${(props) => props.theme['yellow-600']};
+            }
+
+            p:nth-child(2) > span {
+                background: ${(props) => props.theme['black-400']};
+            }
+
+            p:nth-child(3) > span {
+                background: ${(props) => props.theme['yellow-400']};
+            }
+
+            p:nth-child(4) > span {
+                background: ${(props) => props.theme['purple-400']};
+            }
+
+                }    
+    }
+
     
-    }
-
-    div > div > p {
-        font-size: 0.95rem;
-        color: ${(props) => props.theme['black-400']};
-    }
-
-    p > span {
-        border-radius: 999px;
-        padding: 8px 8px 4px;
-        margin-right: 0.5rem;
-    }
-
-    p:nth-child(1) > span {
-        background: ${(props) => props.theme['yellow-600']};
-    }
-
-    p:nth-child(2) > span {
-        background: ${(props) => props.theme['black-400']};
-    }
-
-    p:nth-child(3) > span {
-        background: ${(props) => props.theme['yellow-400']};
-    }
-
-    p:nth-child(4) > span {
-        background: ${(props) => props.theme['purple-400']};
-    }
-
     img {
         width: 25rem;
     }
