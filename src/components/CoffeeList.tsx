@@ -22,9 +22,11 @@ export function CoffeeList(){
                 <p>O tradicional café feito com água quente e grãos moídos</p>
 
                 <footer>
+                    
                     <span>R$ <b>9,90</b></span>
-                    <input type="text" />
-                    <a href="#"><ShoppingCart size={16} color="#ffffff" weight="fill"/></a>
+                    
+
+                    <a href="#"><ShoppingCart size={20} color="#ffffff" weight="fill"/></a>
                 </footer>                
             </div>
         </CoffeeListContainer>

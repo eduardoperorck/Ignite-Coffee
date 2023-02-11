@@ -62,6 +62,40 @@ export const CoffeeListContainer = styled.div`
             text-align: center;
             margin: 1rem;
         }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+
+                margin-left: 0px;
+
+
+                b {
+                    font-family: 'Baloo 2', sans-serif;
+                    font-weight: 800;
+                    font-size: 2rem;
+                }
+
+            }
+
+            a {
+
+                padding: 12px 10px 8px;         
+                border-radius: 8px;
+
+                background: ${(props) => props.theme['purple-600']} ;
+                color: ${(props) => props.theme['black-600']};
+
+                font-weight: 700;
+                font-size: 0.8rem;
+
+            }           
+        }
     }
 
 ` 
