@@ -73,15 +73,23 @@ export function Checkout () {
 
                 </div>
 
-                <div>
+                <section>
                     <h1>Cafés selecionados</h1>
 
                     <ul>
                         <li>
                             <img src={CoffeeTradicional} alt="" />
 
-                            <span>Expresso Tradicional</span>
-                            <a href="#"><Trash size={32} color="#8047F8" />Remover</a>
+                            <div>
+                                <h3>Expresso Tradicional</h3>
+
+                                <div>
+                                    <a href="#"><Trash size={16} color="#8047F8" />Remover</a>
+                                    <a href="#"><Trash size={16} color="#8047F8" />Remover</a>
+                                </div>
+                                
+                            </div>
+
 
                             <span>R$ 9,90</span>
                         </li>
@@ -89,32 +97,42 @@ export function Checkout () {
                         <li>
                             <img src={CoffeeTradicional} alt="" />
 
-                            <span>Expresso Tradicional</span>
-                            <a href="#"><Trash size={24} color="#8047F8" />Remover</a>
+                            <div>
+                                <h3>Expresso Tradicional</h3>
+
+                                <div>
+                                    <a href="#"><Trash size={16} color="#8047F8" />Remover</a>
+                                    <a href="#"><Trash size={16} color="#8047F8" />Remover</a>
+                                </div>
+                                
+                            </div>
+
 
                             <span>R$ 9,90</span>
                         </li>
+
+                        <div>
+                            <div>
+                                <span>Total de itens</span>
+                                <span>R$ 29,70</span>
+                            </div>
+
+                            <div>
+                                <span>Entrega</span>
+                                <span>R$ 3,50</span>
+                            </div>
+
+                            <div id="total">
+                                <span>Total</span>
+                                <span>R$ 33,20</span>
+                            </div>
+
+                            <button>Confirmar Pedido</button>
+                        </div>
                     </ul>
 
-                    <div>
-                        <div>
-                            <span>Total de itens</span>
-                            <span>R$ 29,70</span>
-                        </div>
-
-                        <div>
-                            <span>Entrega</span>
-                            <span>R$ 3,50</span>
-                        </div>
-
-                        <div>
-                            <span>Total</span>
-                            <span>R$ 33,20</span>
-                        </div>
-
-                        <button>Confirmar Pedido</button>
-                    </div>
-                </div>
+                    
+                </section>
 
             </main>
 
