@@ -1,4 +1,4 @@
-import { CurrencyDollar, MapPinLine, Trash } from "phosphor-react";
+import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money, Trash } from "phosphor-react";
 import { Header } from "../components/Header";
 import { CheckoutContainer } from "../styles/pages/Checkout";
 import CoffeeTradicional from '../assets/coffee-tradicional.png'
@@ -26,27 +26,47 @@ export function Checkout () {
                                 
                             </legend>   
                             
-                            <input type="text" placeholder="CEP"/>
-                            <input type="text" placeholder="Rua"/>
+                            <div>
+                                <input type="text" placeholder="CEP" id="cep"/>
 
-                            <input type="text" placeholder="Número"/>
-                            <input type="text" placeholder="Complemento"/>
+                                <input type="text" placeholder="Rua" id="address"/>
 
-                            <input type="text" placeholder="Bairro"/>
-                            <input type="text" placeholder="Cidade"/>
-                            <input type="text" placeholder="UF"/>
+                                <div>
+                                    <input type="text" placeholder="Número" id="number"/>
+                                    <input type="text" placeholder="Complemento" id="complement"/>
+                                </div>
+                                
+
+
+                                <div>
+                                  <input type="text" placeholder="Bairro" id="neighborhood" />
+                                  <input type="text" placeholder="Cidade" id="city"/>
+                                  <input type="text" placeholder="UF" id="uf"/>
+                                </div>
+                                
+                            </div>
+                                
+
                         </fieldset>
                     </form>
 
                     <form>
                         <fieldset>
-                            <legend><CurrencyDollar size={24} color="#8047F8" />Pagamento</legend>   
-                            <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
 
-                            <div>
-                                <a href="#">Cartão de Débito</a>
-                                <a href="#">Cartão de Crédito</a>
-                                <a href="#">Dinheiro</a>
+                            <legend> 
+                                <CurrencyDollar size={24} color="#8047F8" />
+
+                                <div>
+                                    <span>Pagamento</span>
+                                    <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+                                </div>
+                                
+                            </legend>   
+
+                            <div id="box-payments">
+                                <button><CreditCard size={16} color="#8047F8" />Cartão de Débito</button>
+                                <button><Bank size={16} color="#8047F8" />Cartão de Crédito</button>
+                                <button><Money size={16} color="#8047F8" />Dinheiro</button>
                             </div>
                         </fieldset>
                     </form>

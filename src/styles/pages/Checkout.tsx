@@ -36,8 +36,89 @@ export const CheckoutContainer = styled.div`
                     p {
                         font-size: 0.9rem;
                     }
-
                 }
+
+                input {
+                    background: ${(props) => props.theme['gray-400']};
+                    border: 2px solid ${(props) => props.theme['gray-500']};
+
+                    padding: 1rem;
+                    border-radius: 6px;
+                    margin-top: 1rem;
+
+                    &:active, &:focus {
+                        border: 2px solid ${(props) => props.theme['yellow-600']};
+                    }
+                }
+
+
+                #cep, #address {
+                    display: block;
+                    width: 100%;
+                }           
+
+                div {
+                    width: 100%;
+
+                    #number {
+                        width: 30%;
+                        margin-right: 1%;
+                    }
+
+                    #complement {
+                        width: 69%;
+                    }
+
+                    #neighborhood {
+                        width: 39%;
+                    }
+
+                    #city {
+                        width: 39%;
+                        margin: 0 1%;
+                    }
+
+                    #uf {
+                        width: 20%;
+                    }
+                }
+
+
+                #box-payments {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+
+                    button {
+                        background: ${(props) => props.theme['gray-400']};
+                        border: 2px solid ${(props) => props.theme['gray-500']};
+                        color: ${(props) => props.theme['black-400']};
+                        padding: 1rem;
+                        border-radius: 6px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1rem;
+
+                        &:hover {
+                            border: 2px solid ${(props) => props.theme['purple-400']};
+                        }
+
+                        &:checked, &:active {
+                            background: ${(props) => props.theme['purple-200']};
+                            border: 2px solid ${(props) => props.theme['purple-400']};
+                        }
+                    }
+                }
+
+
+
+                
             }
         }
 
